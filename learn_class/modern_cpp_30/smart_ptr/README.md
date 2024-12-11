@@ -33,12 +33,12 @@ private:
 
 ```cpp
 template <typename  T>
-class smater_ptr {
+class smart_ptr {
 public:
-    explicit smater_ptr(
+    explicit smart_ptr(
             T* ptr = nullptr)
             : ptr_(ptr) {}
-    ~smater_ptr()
+    ~smart_ptr()
     {
         delete ptr_;
     }
@@ -54,7 +54,7 @@ private:
 
 ```cpp
 template <typename  T>
-class smater_ptr {
+class smart_ptr {
 public:
    	...
     T& operator*() const { return *ptr_; }
